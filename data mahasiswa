@@ -1,0 +1,9 @@
+public class DataMahasiswa {
+    public static void main(String[] args) {
+        System.out.println("===== DATA MAHASISWA =====");
+        System.out.println("Nama          : Mahesa Faiz Raditya Diharto");
+        System.out.println("NIM           : 09040626121");
+        System.out.println("Program Studi : Sistem Informasi");
+        System.out.println("Semester      : 1");
+    }
+}
