@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Parkir {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Kendaraan (motor/mobil): ");
+        String jenis = input.next();
+        System.out.print("Lama parkir (jam): ");
+        int jam = input.nextInt();
+        int biaya;
+        if (jenis.equals("motor")) {
+            biaya = 2000 + (jam - 1) * 1000;
+        } else {
+            biaya = 5000 + (jam - 1) * 2000;
+        }
+        System.out.println("Total biaya: Rp" + biaya);
+    }
+}
