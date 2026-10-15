@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class SistemPresensi {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumlahMahasiswa = input.nextInt();
+        int hadir = 0;
+        int tidakHadir = 0;
+        for (int i = 1; i <= jumlahMahasiswa; i++) {
+            System.out.print("Mahasiswa ke-" + i + " (1=Hadir, 0=Tidak Hadir): ");
+            int presensi = input.nextInt();
+            if (presensi == 1) {
+                hadir++;
+            } else if (presensi == 0) {
+                tidakHadir++;
+            }
+        }
+        if (jumlahMahasiswa > 0) {
+            double persentase = (hadir * 100.0) / jumlahMahasiswa;
+            System.out.println("\n===== HASIL PRESENSI =====");
+            System.out.println("Jumlah hadir: " + hadir);
+            System.out.println("Jumlah tidak hadir: " + tidakHadir);
+            System.out.println("Persentase kehadiran: " + persentase + "%");
+            if (persentase >= 75) {
+                System.out.println("Status: Memenuhi syarat");
+            } else {
+                System.out.println("Status: Tidak memenuhi syarat");
+            }
+        } else {
+            System.out.println("Jumlah mahasiswa harus lebih dari 0.");
+        }
+        input.close();
+    }
+}
