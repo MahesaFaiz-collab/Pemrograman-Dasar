@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class SimulasiTabungan {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan jumlah bulan: ");
+        int bulan = input.nextInt();
+        int tabungan = 100000;
+        int total = 0;
+        int bulanTarget = 0;
+        for (int i = 1; i <= bulan; i++) {
+            System.out.println("Tabungan bulan ke-" + i + ": Rp" + tabungan);
+            total = total + tabungan;
+            if (total >= 1000000) {
+                bulanTarget = i;
+                break;
+            }
+            tabungan = tabungan + 50000;
+        }
+        System.out.println("\n===== HASIL TABUNGAN =====");
+        System.out.println("Total tabungan: Rp" + total);
+        if (bulanTarget != 0) {
+            System.out.println("Target Rp1.000.000 tercapai pada bulan ke-" + bulanTarget);
+        } else {
+            System.out.println("Target Rp1.000.000 belum tercapai.");
+        }
+        input.close();
+    }
+}
