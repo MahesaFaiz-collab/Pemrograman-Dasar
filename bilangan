@@ -1,22 +1,22 @@
 import java.util.Scanner;
-public class Bilangan {
-    public static void main(String[] args) {
+public class Bilangan{
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        System.out.print("Masukkan n: ");
+        System.out.print("Masukkan n:");
         int n = input.nextInt();
-        // Menampilkan bilangan 1 sampai n
-        System.out.println("\nBilangan 1 sampai " + n + ":");
-        for (int i = 1; i <= n; i++) {
+        // menampilkan bilangan 1 sampai n
+        System.out.println("\nBilangan 1 sampai" + n + ":");
+        for (int i = 1; i <= n; i++){
             System.out.println(i);
         }
-        // Menampilkan bilangan genap
+        // menampilkan bilangan genap
         System.out.println("\nBilangan Genap:");
-        for (int i = 1; i <= n; i++) {
-            if (i % 2 == 0) {
+        for (int i = 1; i <= n; i++){
+            if (i % 2 == 0){
                 System.out.println(i);
             }
         }
-        // Menampilkan bilangan ganjil
+        // menampilkan bilangan ganjil
         System.out.println("\nBilangan Ganjil:");
         for (int i = 1; i <= n; i++) {
             if (i % 2 != 0) {
