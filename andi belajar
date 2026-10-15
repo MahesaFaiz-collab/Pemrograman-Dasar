@@ -9,11 +9,9 @@ public class AndiBelajar{
         System.out.println("4. perkalian");
         System.out.print("pilih operasi: ");
         pilihan = input.nextInt();
-        System.out.print("angka pertama:");
-        a = input.nextInt();
-        System.out.print("angka kedua:");
-        b = input.nextInt();
-        if (pilihan == 1) {
+        System.out.print("angka pertama:"); a = input.nextInt();
+        System.out.print("angka kedua:"); b = input.nextInt();
+        if (pilihan == 1){
             System.out.println("hasil=" + (a + b));
         } else if (pilihan == 2) {
             System.out.println("hasil=" + (a - b));
