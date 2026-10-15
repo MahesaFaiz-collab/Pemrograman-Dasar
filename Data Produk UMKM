@@ -1,0 +1,38 @@
+public class HargaBarang {
+    public static void main(String[] args) {
+        double[] harga = {15000, 25000, 12000, 30000, 45000};
+        double total = 0;
+        double totalDiskon = 0;
+        double totalAkhir = 0;
+        double max = harga[0];
+        double min = harga[0];
+        System.out.println("=== DATA HARGA BARANG ===");
+        for (int i = 0; i < harga.length; i++) {
+            double diskon = 0;
+            if (harga[i] >= 30000) {
+                diskon = harga[i] * 0.10;
+            }
+            double hargaAkhir = harga[i] - diskon;
+            System.out.printf("Harga barang ke-%d: Rp%.0f%n", i + 1, harga[i]);
+            System.out.printf("Diskon: Rp%.0f%n", diskon);
+            System.out.printf("Harga setelah diskon: Rp%.0f%n%n", hargaAkhir);
+            total += harga[i];
+            totalDiskon += diskon;
+            totalAkhir += hargaAkhir;
+            if (harga[i] > max) {
+                max = harga[i];
+            }
+            if (harga[i] < min) {
+                min = harga[i];
+            }
+        }
+        double rataRata = total / harga.length;
+        System.out.println("=== HASIL PERHITUNGAN ===");
+        System.out.printf("Total harga awal: Rp%.0f%n", total);
+        System.out.printf("Rata-rata harga: Rp%.0f%n", rataRata);
+        System.out.printf("Harga tertinggi: Rp%.0f%n", max);
+        System.out.printf("Harga terendah: Rp%.0f%n", min);
+        System.out.printf("Total diskon: Rp%.0f%n", totalDiskon);
+        System.out.printf("Total setelah diskon: Rp%.0f%n", totalAkhir);
+    }
+}
