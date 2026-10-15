@@ -4,10 +4,9 @@ public class PerulanganDoWhile {
         Scanner input = new Scanner(System.in);
         int angka;
         do {
-            System.out.print("Masukkan angka (0 untuk berhenti): ");
+            System.out.print("masukkan angka (0 untuk berhenti):");
             angka = input.nextInt();
-            System.out.println("Anda memasukkan: " + angka);
         } while (angka != 0);
-        System.out.println("Program selesai.");
+        System.out.println("program selesai.");
     }
 }
