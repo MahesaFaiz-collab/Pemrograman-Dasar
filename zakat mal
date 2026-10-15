@@ -2,14 +2,14 @@ import java.util.Scanner;
 public class ZakatMal {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Total harta: ");
+        System.out.print("total harta:");
         double harta = input.nextDouble();
-        System.out.print("Nilai nisab: ");
+        System.out.print("nilai nisab:");
         double nisab = input.nextDouble();
         if (harta >= nisab) {
-        System.out.println("Zakat: Rp" + (harta * 0.025));
+            System.out.println("zakat:Rp" + (harta * 0.025));
         } else {
-        System.out.println("Harta belum mencapai nisab.");
+            System.out.println("belum mencapai nisab.");
         }
     }
 }
