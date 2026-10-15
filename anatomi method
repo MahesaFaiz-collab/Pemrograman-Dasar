@@ -5,10 +5,9 @@ public class ContohMethod {
     }
     // Method menampilkan hasil
     static void tampil(double luas) {
-        System.out.println("Luas: " + luas);
+        System.out.println("luas:" + luas);
     }
     public static void main(String[] args) {
-        double luas = luasPersegiPanjang(5, 3);
-        tampil(luas);
+        double luas = luasPersegiPanjang(5, 3); tampil(luas);
     }
 }
