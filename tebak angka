@@ -5,19 +5,19 @@ public class TebakAngka {
         int angka = (int) (Math.random() * 100) + 1;
         int percobaan = 0;
         while (percobaan < 7) {
-            System.out.print("Tebak angka 1-100: ");
+            System.out.print("tebak angka 1-100:");
             int tebak = input.nextInt();
             percobaan++;
             if (tebak == angka) {
-                System.out.println("Benar!");
+                System.out.println("tebakan benar!");
                 break;
             } else if (tebak < angka) {
-                System.out.println("Terlalu kecil");
+                System.out.println("terlalu kecil!");
             } else {
-                System.out.println("Terlalu besar");
+                System.out.println("terlalu besar!");
             }
         }
-        System.out.println("Jumlah percobaan: " + percobaan);
-        input.close();
+        System.out.println("angka yang benar:" + angka);
+        System.out.println("jumlah percobaan:" + percobaan);
     }
 }
