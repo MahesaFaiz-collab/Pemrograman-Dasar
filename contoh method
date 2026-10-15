@@ -1,0 +1,14 @@
+public class ContohMethod {
+    // Method menghitung luas
+    static double luasPersegiPanjang(double panjang, double lebar) {
+        return panjang * lebar;
+    }
+    // Method menampilkan hasil
+    static void tampil(double luas) {
+        System.out.println("Luas: " + luas);
+    }
+    public static void main(String[] args) {
+        double luas = luasPersegiPanjang(5, 3);
+        tampil(luas);
+    }
+}
