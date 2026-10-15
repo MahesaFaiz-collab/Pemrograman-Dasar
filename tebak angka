@@ -1,16 +1,11 @@
 import java.util.Scanner;
 public class TebakAngka {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int angka = (int) (Math.random() * 100) + 1;
-        int percobaan = 0;
+        Scanner input = new Scanner(System.in); int angka = (int) (Math.random() * 100) + 1; int percobaan = 0;
         while (percobaan < 7) {
-            System.out.print("tebak angka 1-100:");
-            int tebak = input.nextInt();
-            percobaan++;
+            System.out.print("tebak angka 1-100:"); int tebak = input.nextInt(); percobaan++;
             if (tebak == angka) {
-                System.out.println("tebakan benar!");
-                break;
+                System.out.println("tebakan benar!"); break;
             } else if (tebak < angka) {
                 System.out.println("terlalu kecil!");
             } else {
