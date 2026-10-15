@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class DistribusiZakat {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("total beras (kg):");
+        int total = input.nextInt();
+        System.out.print("beras per keluarga (kg):");
+        int beras = input.nextInt();
+        int jumlah = total / beras;
+        int sisa = total % beras;
+        System.out.println("jumlah keluarga:" + jumlah);
+        System.out.println("sisa beras:" + sisa + "kg");
+    }
+}
