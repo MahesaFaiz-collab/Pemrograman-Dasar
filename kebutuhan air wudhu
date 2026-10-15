@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class KebutuhanAirWudhu {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("jumlah mahasiswa:");
+        int mahasiswa = input.nextInt();
+        System.out.print("frekuensi wudhu:");
+        int frekuensi = input.nextInt();
+        System.out.print("air per wudhu (liter):");
+        double air = input.nextDouble();
+        double total = mahasiswa * frekuensi * air;
+        System.out.println("total kebutuhan air=" + total + "liter");
+        input.close();
+    }
+}
